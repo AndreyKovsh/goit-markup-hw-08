@@ -1,0 +1,39 @@
+.checkbox {
+  -webkit-appearance: none;
+  &-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid $tit-t-c;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: $accent;
+  background-color: $accent;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.submit {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $pr-w-c;
+  background-color: $accent;
+  border: none;
+  border-radius: 4px;
+}

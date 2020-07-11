@@ -1,0 +1,14 @@
+.ps {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 2;
+
+  & .text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

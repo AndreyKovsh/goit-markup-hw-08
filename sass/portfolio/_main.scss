@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .title {
+    padding-top: 20px;
+    margin: 0;
+    margin-left: 24px;
+
+    color: $tit-t-c;
+    background-color: $pr-w-c;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+  }
+
+  & .text {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+
+    color: $pr-t-c;
+    background-color: $pr-w-c;
+
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}

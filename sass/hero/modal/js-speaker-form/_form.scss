@@ -1,0 +1,43 @@
+.form {
+  position: relative;
+  display: block;
+  padding: 40px;
+}
+/* Кнопка Закрыть */
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: $pr-w-c;
+  color: #000000;
+  cursor: pointer;
+  &-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+}
+
+.close-icon {
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $tit-t-c;
+}

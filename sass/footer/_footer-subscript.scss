@@ -1,0 +1,76 @@
+.footer {
+  & .subscript {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+    height: 86px;
+    margin-left: 94px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
+  & .text {
+    margin-top: 9px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 13px;
+    right: 28px;
+  }
+}
+
+.form {
+  &-footer {
+    bottom: 0;
+    left: 0;
+    width: 358px;
+    height: 50px;
+
+    margin-right: 12px;
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: $bg-f-c;
+    outline: none;
+  }
+
+  &-footer:focus {
+    border-color: $accent;
+  }
+
+  &-button {
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    text-align: left;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 62px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $pr-w-c;
+    border: none;
+    border-radius: 4px;
+    background-color: $accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

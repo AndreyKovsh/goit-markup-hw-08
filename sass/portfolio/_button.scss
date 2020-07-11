@@ -1,0 +1,18 @@
+.section.portfolio {
+  padding-top: 93px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  & .button {
+    padding: 6px 22px;
+    border: 0px;
+  }
+
+  & .button + .button {
+    margin-left: 8px;
+  }
+}
