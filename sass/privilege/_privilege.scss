@@ -1,21 +1,10 @@
-.section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: $tit-t-c;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 .features {
-  // width: 450px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  & .item {
+  & .features-item {
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
@@ -28,24 +17,24 @@
   }
 }
 
-.item {
+.features-item {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
 
-  &:nth-child(-n + 2) {
-    @media screen and (min-width: 768px) {
-      margin-top: 0;
-    }
-  }
+  // &:nth-child(-n + 2) {
+  //   @media screen and (min-width: 768px) {
+  //     margin-top: 0;
+  //   }
+  // }
 
-  &:nth-last-child(-n + 2) {
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
+  // &:nth-last-child(-n + 2) {
+  //   @media screen and (min-width: 768px) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 
   &:nth-last-child(-n + 4) {
     @media screen and (min-width: 1200px) {
@@ -69,6 +58,8 @@
     }
   }
   & .text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: $pr-t-c;
     font-size: 14px;
     line-height: 1.71;
@@ -92,8 +83,4 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-}
-.text {
-  margin-top: 0;
-  margin-bottom: 0;
 }

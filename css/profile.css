@@ -388,6 +388,8 @@ img {
 }
 
 .section.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
@@ -395,21 +397,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
-.team .item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.team .team-item {
+  width: 450px;
+  height: 482px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  width: 270px;
-  height: 422px;
   background-color: #ffffff;
-}
-
-.team .item + .item {
-  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .team .title {
