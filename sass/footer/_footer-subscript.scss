@@ -1,39 +1,36 @@
-.footer {
-  & .subscript {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 570px;
-    height: 86px;
-    margin-left: 94px;
+.footer-subscript {
+  width: 450px;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 151px;
+  }
+  // position: relative;
+  // display: flex;
+  // flex-wrap: wrap;
+  // width: 570px;
+  // height: 86px;
+  // margin-left: 94px;
+
+  & .footer-title {
+    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-transform: uppercase;
+
+    // @media screen and (min-width: 1200px) {
+    //   margin-left: 69px;
+    //   margin-bottom: 28px;
+    // }
   }
 
-  & .text {
-    margin-top: 9px;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &-icon {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    bottom: 13px;
-    right: 28px;
-  }
-}
-
-.form {
-  &-footer {
+  & .footer-form {
     bottom: 0;
     left: 0;
-    width: 358px;
+    width: 450px;
     height: 50px;
-
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding-top: 15px;
     padding-left: 16px;
     padding-bottom: 15px;
@@ -51,11 +48,12 @@
     outline: none;
   }
 
-  &-footer:focus {
+  & .footer-form:focus {
     border-color: $accent;
   }
 
-  &-button {
+  & .form-button {
+    position: relative;
     display: inline-flex;
     width: 200px;
     height: 50px;
@@ -72,5 +70,13 @@
     border-radius: 4px;
     background-color: $accent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  & .footer-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    bottom: 13px;
+    right: 28px;
   }
 }

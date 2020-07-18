@@ -24,25 +24,6 @@
     }
   }
 
-  // &:nth-child(-n + 2) {
-  //   @media screen and (min-width: 768px) {
-  //     margin-top: 0;
-  //   }
-  // }
-
-  // &:nth-last-child(-n + 2) {
-  //   @media screen and (min-width: 768px) {
-  //     margin-bottom: 0;
-  //   }
-  // }
-
-  &:nth-last-child(-n + 4) {
-    @media screen and (min-width: 1200px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
   & .title {
     margin-top: 0;
     margin-bottom: 10px;

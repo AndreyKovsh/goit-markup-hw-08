@@ -3,25 +3,58 @@
   background-color: $bg-f-c;
 
   & .container {
-    display: flex;
-    padding-top: 48px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
 
-  & .logo {
-    margin-bottom: 10px;
-    color: $tit-t-c;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.18;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-top: 48px;
+      padding-bottom: 28px;
+    }
+  }
+}
+
+.footer-address {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 61px;
   }
 
   & .address {
+    margin-top: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+  }
+
+  & .logo {
+    color: $tit-t-c;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+}
+
+.address {
+  & .text {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.6);
   }
 }

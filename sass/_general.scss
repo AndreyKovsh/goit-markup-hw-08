@@ -31,23 +31,6 @@ img {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  &.current {
-    color: $accent;
-    position: relative;
-    padding-bottom: 8px;
-  }
-  &.current::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $accent;
-    border-radius: 2px;
-  }
 }
 
 .visually-hidden {
