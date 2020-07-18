@@ -6,11 +6,11 @@
   }
 
   @media screen and (min-width: 1200px) {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 570px;
     height: 86px;
+    margin-top: 12px;
     margin-left: 94px;
   }
 
@@ -49,6 +49,12 @@
     border-radius: 4px;
     background-color: $bg-f-c;
     outline: none;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
   }
 
   & .footer-form:focus {
