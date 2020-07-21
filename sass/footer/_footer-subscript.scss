@@ -1,5 +1,5 @@
 .footer-subscript {
-  width: 450px;
+  max-width: 450px;
 
   @media screen and (min-width: 768px) {
     margin-left: 151px;
@@ -8,14 +8,14 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
-    width: 570px;
+    max-width: 570px;
     height: 86px;
     margin-top: 12px;
     margin-left: 94px;
   }
 
   & .footer-title {
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -29,8 +29,6 @@
   }
 
   & .footer-form {
-    bottom: 0;
-    left: 0;
     width: 450px;
     height: 50px;
     margin-bottom: 20px;
@@ -42,9 +40,7 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: $bg-f-c;

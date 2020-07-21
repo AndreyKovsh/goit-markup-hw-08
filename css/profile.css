@@ -86,19 +86,6 @@ img {
   color: currentColor;
 }
 
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 60px;
-}
-
 .logo {
   color: #212121;
   font-family: Raleway;
@@ -448,13 +435,16 @@ img {
 }
 
 .section.team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
+.section .team-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media screen and (min-width: 1200px) {
-  .section.team {
+  .section .team-nav {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -471,8 +461,8 @@ img {
 }
 
 .team-item {
-  width: 450px;
-  height: 482px;
+  max-width: 450px;
+  max-height: 482px;
   margin: 15px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -492,8 +482,12 @@ img {
   }
 }
 
+.team-item .img {
+  margin-bottom: 30px;
+}
+
 .team-item .title {
-  margin-top: 30px;
+  margin: 0;
   margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
@@ -502,6 +496,7 @@ img {
 }
 
 .team-item .text {
+  margin: 0;
   margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
@@ -623,7 +618,7 @@ img {
 }
 
 .footer-subscript {
-  width: 450px;
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -639,7 +634,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 570px;
+    max-width: 570px;
     height: 86px;
     margin-top: 12px;
     margin-left: 94px;
@@ -647,7 +642,7 @@ img {
 }
 
 .footer-subscript .footer-title {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -656,8 +651,6 @@ img {
 }
 
 .footer-subscript .footer-form {
-  bottom: 0;
-  left: 0;
   width: 450px;
   height: 50px;
   margin-bottom: 20px;
@@ -669,8 +662,6 @@ img {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
