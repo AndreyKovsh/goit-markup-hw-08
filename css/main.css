@@ -1010,7 +1010,7 @@ img {
 }
 
 .footer-subscript .footer-form {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   padding-top: 15px;
@@ -1052,7 +1052,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 29px;
-  padding-right: 62px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
