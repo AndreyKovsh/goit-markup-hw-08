@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/mobail-first.min.css" />
   </head>
 
-  <body>
+  <body modal-open>
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container">
@@ -87,90 +87,6 @@
         <button class="button primary link" data-modal-open>
           Заказать услугу
         </button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <form class="form js-speaker-form">
-              <button class="close" data-modal-close>
-                <svg class="close-icon">
-                  <use href="./images/symbol-defs_2.svg#close"></use>
-                </svg>
-              </button>
-              <h2 class="modal-title">
-                Оставьте свои данные, мы вам перезвоним
-              </h2>
-
-              <label class="form-field">
-                <input
-                  type="text"
-                  class="form-field input"
-                  name="name"
-                  placeholder=" "
-                />
-                <span class="form-field label">Имя</span>
-                <span class="form-field icon">
-                  <svg class="icon">
-                    <use href="./images/symbol-defs_2.svg#person"></use>
-                  </svg>
-                </span>
-              </label>
-
-              <label class="form-field">
-                <input
-                  type="tel"
-                  class="form-field input"
-                  name="tel"
-                  placeholder=" "
-                />
-                <span class="form-field label">Телефон</span>
-                <span class="form-field icon">
-                  <svg class="icon">
-                    <use href="./images/symbol-defs_2.svg#phone-black"></use>
-                  </svg>
-                </span>
-              </label>
-
-              <label class="form-field">
-                <input
-                  type="email"
-                  class="form-field input"
-                  name="mail"
-                  placeholder=" "
-                />
-                <span class="form-field label">Почта</span>
-                <span class="form-field icon">
-                  <svg class="icon">
-                    <use href="./images/symbol-defs_2.svg#email-black"></use>
-                  </svg>
-                </span>
-              </label>
-
-              <label class="comment form-field">
-                <textarea
-                  class="comment input"
-                  name="comment"
-                  placeholder=" "
-                ></textarea>
-                <span class="comment label">Комментарий</span>
-              </label>
-
-              <label class="checkbox-form">
-                <input
-                  class="checkbox"
-                  type="checkbox"
-                  name="policy"
-                  value="policy"
-                />
-                <span class="checkbox-icon"></span>
-                <span>
-                  Соглашаюсь с рассылкой и принимаю
-                  <a class="logo-blue" href="">Условия договора</a>
-                </span>
-              </label>
-
-              <button class="submit" type="submit">Отправить</button>
-            </form>
-          </div>
-        </div>
       </section>
 
       <!-- Привелегии -->
@@ -466,6 +382,90 @@
         </div>
       </section>
     </main>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="form js-speaker-form">
+          <button class="close" data-modal-close>
+            <svg class="close-icon">
+              <use href="./images/symbol-defs_2.svg#close"></use>
+            </svg>
+          </button>
+          <h2 class="modal-title">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+
+          <label class="form-field">
+            <input
+              type="text"
+              class="form-field input"
+              name="name"
+              placeholder=" "
+            />
+            <span class="form-field label">Имя</span>
+            <span class="form-field icon">
+              <svg class="icon">
+                <use href="./images/symbol-defs_2.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            <input
+              type="tel"
+              class="form-field input"
+              name="tel"
+              placeholder=" "
+            />
+            <span class="form-field label">Телефон</span>
+            <span class="form-field icon">
+              <svg class="icon">
+                <use href="./images/symbol-defs_2.svg#phone-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form-field">
+            <input
+              type="email"
+              class="form-field input"
+              name="mail"
+              placeholder=" "
+            />
+            <span class="form-field label">Почта</span>
+            <span class="form-field icon">
+              <svg class="icon">
+                <use href="./images/symbol-defs_2.svg#email-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="comment form-field">
+            <textarea
+              class="comment input"
+              name="comment"
+              placeholder=" "
+            ></textarea>
+            <span class="comment label">Комментарий</span>
+          </label>
+
+          <label class="checkbox-form">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="policy"
+              value="policy"
+            />
+            <span class="checkbox-icon"></span>
+            <span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="logo-blue" href="">Условия договора</a>
+            </span>
+          </label>
+
+          <button class="submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
